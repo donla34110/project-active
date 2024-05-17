@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header{
+    background: url("https://plus.unsplash.com/premium_photo-1677494867548-f4a2bcb059c5?q=80&w=2025&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+
+
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+    
+}
+.logo a{
+    font-size: 40px;
+
+}
+.header-info{
+    margin-top: 5rem;
+    /* border: 1px solid red; */
+    width: 500px;
+}
+.header-info h2 {
+    font-size: 4rem;
+    font-weight: lighter;
+
+
+}
+.header-btn{
+    margin-top: 7px;
+}
+.header-btn input {
+    padding: 0.5rem;
+    width: 230px;
+    border: none;
+    border-radius: 3px;
+}
+.header-btn button{
+    padding: 0.5rem;
+    width: 150px;
+    background-color: #1973e1;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+}
+.about{
+    text-align: center;
+    padding: 3rem 0;
+}
+.about-info{
+    color: #1973e1;
+    font-size: 2rem;
+
+}
+.about-decr{
+    color: #8c8585;
+    margin: 1rem;
+}
+.about-con{
+    padding: 0 5rem;
+}
+.about-img
+{
+    margin: 4rem 0 ;
+}
+.pricing{
+    background-color: #1973e1;
+    padding: 3rem 0 ;
+    color: #fff;
+    text-align: center;
+
+}
+.pricing-info h3{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.pricing-info p{
+    margin: 1rem 0;
+}
+.pricing-table{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 2rem;
+}
+.pricing-box{
+    background-color: #fff;
+    color: black;
+    
+}
+.pricing-box-title{
+    background-color: #bdb3b3;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.pricing-box-info{
+    padding: 1rem;
+}
+.price-blue{
+    font-size: 50px;
+    color: #1973e1;
+    font-weight: bold;
+}
+.pricing-box-info p{
+    margin: .5rem 0;
+}
+.pricing-more-info{
+    margin-top: 2rem;
+    display: inline-block;
+    background: #096103;
+    padding: 1rem;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.clients{
+    padding: 3rem 0;
+    text-align: center;
+}
+.clients-title h3{
+    color:#1973e1;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.clients-title p{
+    color: #bdb3b3;
+    margin: 2rem 0;
+}
+.clients-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 2rem;
+    text-align: left;
+    margin-top: 2rem;
+
+}
+.clients-img{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+.clients-img img{
+    width: 20%;
+    border-radius: 100%;
+    margin-right: 1rem;
+}
+.newslider{
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    background:url("https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+.newslider-latter-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 500px;
+    color: #fff;
+}
+.newslider-latter-title h3{
+    font-size: 2rem;
+    font-weight: lighter;
+
+}
+.newslider-latter-title p{
+    margin: 1rem 0;
+}
+.newslider-latter-title input {
+    padding: 0.5rem;
+    width: 350px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 1rem;
+}
+.newslider-latter-title button{
+    padding: 0.5rem;
+    width: 150px;
+    background-color: #1973e1;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+}
+footer{
+    background-color: #1973e1;
+    padding: 1rem;
+}
+.foodter-menu{
+    display: flex;
+    justify-content: space-between;
+}
+.foodter-menu a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: lighter;
+
+    
+}
+.foodter-menu ul{
+    list-style: none;
+    display: flex;
+
+    
+}
+.foodter-menu li{
+    margin-right: 1rem;
+    
+
+    
+}

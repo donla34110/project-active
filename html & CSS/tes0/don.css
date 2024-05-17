@@ -1,0 +1,23 @@
+.flexbox{
+    display: flex;
+    border: 1px solid rebeccapurple;
+    box-sizing: border-box;/*การจัดการขนาดของกล่องใน CSS โดยที่ไม่ต้องคำนึงถึงการเพิ่ม padding หรือ border ที่จะทำให้กล่องขยายขึ้นเพิ่มเติม.*/
+    flex-direction: row;  /*ใช้บอกแกนหลักของกล่องแนวนอนหรือแนวตั้ง /แกนหลักเป็นแนวยนอน */
+    flex-wrap: wrap;/* บบอกถึงว่าอนุญาติไห้ไอเทมส่วนเกินลงไปอยู่ข้างล่างรึเปล่า*/
+    align-items: center;/*จัดเรียง item ทั้งหมดตามแกนรองของflexbox และ item มันจะเที่ยบกับตัวข้างงๆๆว่าขนาดมันสัมพันกับตัวเท่าไหร่*/
+    justify-content: center;/*จัดเรียง item ทั้งหมดตามแกนหลักของflexbox*/
+}
+.item{
+    border: 1px solid #4343;
+    display: block;
+    width: 33.33%;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.content{
+    background-color: aqua;
+    border: 1px solid #343434;
+    padding: 16px;
+
+}

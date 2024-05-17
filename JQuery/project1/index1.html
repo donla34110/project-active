@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="crad">
+        <h3>Toto list </h3>
+
+        <div class="form">
+            <input type="text" id="txt">
+            <button id="btn-add">Add</button>
+
+        </div>
+        <div class="items-control" id="items-control">
+               <!-- <div id="i" class="items">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div class="btn-control">
+                        <div onclick="edit(i)" class="edit">แก้ไข</div>
+                        <div onclick="del(i)" class="delete">ลบ</div>
+                    </div>
+               </div> 
+               <div id="edit-i" class="items">
+                    <input type="text" class="txt-edit" value="">
+                    <div class="btn-control">
+                        <div onclick="save(i)" class="btn-save">บันทึก</div>
+                    </div>
+               </div> -->
+        </div>
+    </div>
+
+
+
+
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+
+
+            let data = [];
+            let html = "";
+
+            $("#btn-add").click(function() {
+           
+                let html = "";
+                data.push($("#txt").val());
+                console.log(data);
+                for(var l = 0; l<data.length; l++){
+                     html += `
+                <div id="${l}" class="items">
+                    <p>${data[l]}</p>
+                    <div class="btn-control">
+                        <div onclick="edit(${l})" class="edit">แก้ไข</div>
+                        <div onclick="del(${l})" class="delete">ลบ</div>
+                    </div>
+               </div>
+                     `;
+                }
+
+                $('#items-control').html(html)
+                $('#txt').val("");
+
+                
+            });
+
+            function del(id){
+                    console.log(data)
+                    data.splice(id,1);
+                    html= "";
+                    for(var l = 0; l<data.length; l++){
+                        html += `  
+                        <div id="${l}" class="items">
+                            <p>${data[l]}</p>
+                            <div class="btn-control">
+                                <div onclick="edit(${l})" class="edit">แก้ไข</div>
+                                <div onclick="del(${l})" class="delete">ลบ</div>
+                            </div>
+                        </div>
+                        `;
+                    }
+                    $('#items-control').html(html);
+                }
+                function edit(id){
+                    html = '';
+                    for(let i=0; i<data.length;i++)
+                    {
+                        if(id == i){
+                            html += `
+                             <div id="edit-${i}" class="items">
+                                <input type="text" class="txt-edit" value="${ $('#'+i+" p").text()  }"> 
+                                <div class="btn-control">
+                                    <div onclick="save(${i})" class="btn-save">บันทึก</div>
+                                </div>
+                            </div>`;
+                        }
+                        else {
+                            html += `  
+                                <div id="${l}" class="items">
+                                    <p>${data[l]}</p>
+                                    <div class="btn-control">
+                                        <div onclick="edit(${l})" class="edit">แก้ไข</div>
+                                        <div onclick="del(${l})" class="delete">ลบ</div>
+                                    </div>
+                                </div>
+                        `;
+
+                        }
+
+                    }
+                    $("#items-control").html(html);
+                   
+
+
+
+
+
+                }
+
+                function save(id){
+                    html= "";
+                    
+                    console.log(data);
+
+                    for(let i=0; i<data.length;i++){
+                        if(id == i){
+                            data[i] = $('#edit-'+ i +" input").val();
+                        }
+                        html += `  
+                                <div id="${i}" class="items">
+                                    <p>${data[i]}</p>
+                                    <div class="btn-control">
+                                        <div onclick="edit(${i})" class="edit">แก้ไข</div>
+                                        <div onclick="del(${i})" class="delete">ลบ</div>
+                                    </div>
+                                </div>
+                        `;
+
+
+                    }
+                    $("#items-control").html(html);
+                    
+
+                }
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+

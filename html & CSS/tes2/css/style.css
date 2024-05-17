@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333;
+   
+    background-color: #333;
+
+
+
+}
+.logo{
+    color:#fff;
+    list-style: none;
+    margin: 20px;
+    display: flex;
+
+
+
+
+
+}
+.logo a{
+    text-decoration: none;
+    color: #fff;
+
+}
+.menu li {
+    display: flex;
+    list-style: none;
+   
+
+
+}
+.menu li a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: #fff;
+}
+.menu{
+    display: flex;
+    margin: 20px;
+
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    color: #fff;
+    background-image: url("https://s.isanook.com/tr/0/ud/287/1437243/290616695_5231000670314514_25.jpg?ip/resize/w728/q80/jpg");
+  
+
+
+}
+.banner-info{
+    margin: 30px;
+    text-align: center;
+   
+
+}
+.banner-info img{
+    border-radius: 100%;
+    width: 300px;
+
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+main div {
+    padding: 20px;
+}
+main img{
+    width: 100%;
+
+}
+main p{
+    margin-top: 10px;
+
+}
+
+footer {
+    padding: 30px;
+    background-color: #333;
+    color:aliceblue;
+
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    
+
+}
+
+

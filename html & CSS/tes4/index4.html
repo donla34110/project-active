@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .main{
+            height: 550px;
+            width: 360px;
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+            margin: 3rem auto;
+            border-radius: 50px;
+            position: relative;
+           
+            
+        }
+        .btn {
+            position: absolute;
+            background-color: blueviolet;
+            top: -15px;
+            left: 50%;
+            padding: .5rem 2rem;
+            
+            transform: translatex(-50%);
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+            color: #fff;
+
+
+
+        }
+        .img {
+            height: 300px;
+            background-color: aqua;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            overflow: hidden;
+
+            
+
+        }
+        .img img{
+            width: 100%;
+        }
+        .text{
+            border-bottom: 1px solid #e5e5e5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 180px;
+            text-align: center;
+        }
+        .foot{
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            height: 60px;
+
+        }
+        .foot-l img{
+            width: 50px;
+            border-radius: 50%;
+            height: 50px;
+
+        }
+        .foot-l{
+            display: flex;
+            padding-left: 20px;
+            align-items: center;
+           
+
+        }
+        .foot-l h3{
+            margin-left:0.5rem;
+        }
+        .foot-r p{
+            padding-right: 2rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="btn">Traget</div>
+        <div class="img">
+            <img src="https://images.unsplash.com/photo-1708921047448-389333bac8f9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+        <div class="text">
+            <h3>Janury 2033 @</h3>
+            <h1>TEXT ARrer</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores totam dolores inventore eum doloribus iusto ipsa animi dolor quos quam?</p>
+        </div>
+        <div class="foot">
+            <div class="foot-l">
+                <img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <h3>my Don</h3>
+            </div>
+            <div class="foot-r">
+                <p>name is the</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

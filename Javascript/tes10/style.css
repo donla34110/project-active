@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.3s;
+    list-style: none; 
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+body{
+    background-color: rgb(209, 213, 218);
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+p{
+    font-size: 1rem;
+}
+
+
+
+header{
+    background-color: rgb(0, 0, 0);
+    padding: 7px;
+    
+   
+}
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    
+}
+.nav-con{
+    
+    padding: 7px;
+    display: flex;
+    align-items:  center;
+    justify-content: space-between;
+}
+.nav-con .logo{
+    color: white;
+}
+.nav-con .menu{
+    display: flex;
+    align-items: center;
+
+}
+.nav-con .menu li{
+    margin-right: 20px;
+}
+.nav-con .menu li a{
+    color: aliceblue;
+}
+.nav-con .menu li a:hover{
+    color: orangered;
+    transition: all 0.9s;
+}
+nav{
+    background-color: rgb(227, 227, 227);
+    padding: 5px;
+    width: 100%;
+}
+nav .banner-con{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 12px;
+}
+.banner-box1 .logo-items i{
+    padding: 10px;
+    font-size: 20px;
+    color: black;
+}
+.banner-box1 .logo-items {
+    font-size: 1rem;
+    font-weight: 700;
+}
+.banner-menu{
+    display: flex;
+    padding: 0 20px;
+}
+.banner-menu li{
+   margin-left: 20px;
+}
+.banner-menu li > a{
+   color: rgb(0, 0, 0);
+   text-transform: uppercase;
+   font-weight: 600;
+}
+.contant-info{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 2px;
+    grid-template-rows: 200px 200px;
+    padding: 18px;
+    background-color: white;
+}
+.box-left{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer; 
+}
+.box-left::after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background: linear-gradient(rgba(0, 0, 0,0.1), rgba(0,0,0,0.5));
+    width: 100%;
+    height: 100%;
+}
+.box-left:nth-child(1){
+    grid-row: 1/4;
+} 
+.box-left:nth-child(2){
+    grid-column: 2/4;
+} 
+.box-left:nth-child(3){
+    grid-row: 3/4;
+} 
+.box-left:nth-child(4){
+    grid-column: 2/4;
+} 
+.box-left:nth-child(5){
+    grid-row: 3/4;
+   
+} 
+ 
+.contant-text{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 10px;
+    color: #eeecec;
+    z-index: 1;
+}
+
+
+
+

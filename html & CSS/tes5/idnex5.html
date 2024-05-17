@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            background-color: #333;
+            padding: 1.5rem;
+            
+        }
+        .logo a{
+            list-style: none;
+            text-decoration: none;
+            color: #fff;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 30px;
+
+        }
+        .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+           
+            
+        }
+        .menu{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            /* color: #fff; */
+            
+        }
+        .menu li{
+            list-style: none;
+            margin-left: 30px;
+            
+        }
+        .menu a{
+            text-decoration: none;
+            color: #ffff;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+
+        }
+        .con-th{
+            display: flex;
+            justify-content: space-between;
+            
+           
+
+        }
+        .container{
+            max-width: 1140px;
+            margin: 0 auto;
+            border: 1px solid red;
+            
+            
+        }
+        .hero-con{
+            display: flex;
+
+        }
+        .img-hero img{
+            width: 100%;
+           
+            padding: 2rem;
+            
+        }
+        .banner-info{
+            width: 100%;
+            padding: 2rem;
+            
+        }
+        .banner-info h1{
+            font-size: 2rem;
+
+        }
+        .banner-info p{
+            margin: 1rem 0;
+        }
+        .banner-info .btn{
+            background-color: chocolate;
+            padding: .5rem 1rem;
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            border-radius:4px ;
+
+
+        }
+        .banner{
+            background-color: #908a8a;
+            height: 400px;
+            border: 1px solid red
+        }
+        .blog-con{
+            border: 1px solid red;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            column-gap: 2rem;
+            
+
+        }
+        .blog-items{
+            border: 1px solid red
+        }
+        .blog-items img{
+            width: 100%;
+            border: 1px solid red
+        }
+        .blog-title {
+            margin:1rem 0 ;
+            border: 1px solid red
+
+        }
+        .blog-items h1{
+            margin-top: 1rem ;
+        }
+        .blog-items p {
+            margin: 1rem 0;
+        }
+        .blog-items .btn{
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            color: #fff;
+            background-color: orange;
+            text-decoration: none;
+            border-radius: 5px;
+
+
+        }
+        .footer-top{
+            padding: 3rem;
+            background-color: #333;
+            color: #fff;
+            margin-top: 2rem;
+            border: 1px solid red;
+
+            
+        }
+        .foodter-top-con{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 2rem;
+            border: 1px solid red;
+
+        }
+        .footer-top-items-con{
+            display: flex;
+            margin: 1rem 0;
+            border: 1px solid rgb(230, 229, 234);
+        }
+        .footer-top-items-con .date{
+            background-color: #fff;
+            color: #333;
+            padding: 0.5rem;
+            border-radius: 4px;
+            align-items: center;
+            margin-right: 20px;
+            border: 1px solid red;
+
+        }
+        .footer-top-items:nth-child(2) h1,
+        .footer-top-items:nth-child(3) h1{
+            margin-bottom: 2rem;
+            border: 1px solid red;
+
+
+        }
+        .footer-buttom{
+            background-color: #908a8a;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            font-size: 30px;
+            border: 1px solid red;
+        }
+        .info{
+            border: 1px solid red;
+        }
+    .footer-top-items{
+        border: 1px solid rgb(217, 239, 15)
+    }
+    .main{
+        border: 1px solid red
+    }
+    .con-th{
+        border: 1px solid red
+    }
+    .logo{
+        border: 1px solid red
+    }
+    .menu{
+        border: 1px solid red
+    }
+    .banner{
+        border: 1px solid red
+    }
+    .hero-con{
+        border: 1px solid red
+    }
+    .banner-info{
+        border: 1px solid red
+    }
+    .img-hero{
+        border: 1px solid red
+    }
+    </style>
+</head>
+<body>
+    <!-- navigation -->
+    <nav class="main">
+        <div class="container">
+            <div class="con-th">
+                <div class="logo">
+                    <a href="#">DOnlaa</a>
+                </div>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">content</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+             </div>
+        </div>
+    </nav>
+    <!-- mavigtion ENds -->
+    <!-- Banner start -->
+    <section class="banner">
+        <div class="container">
+            <div class="hero-con">
+                <div class="banner-info">
+                    <h1> This is banner </h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente unde nesciunt sed sit ipsam quasi veniam obcaecati fuga, suscipit quod!</p>
+                    <a href="# " class="btn">Learn More</a>
+                </div>
+                <div class="img-hero">
+                    <img src="https://image.pixstory.com/optimized/Pixstory-image-164223377432453.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Ends -->
+
+    <section class="Blog">
+        <div class="container">
+            <div class="blog-title">
+                <h3>out Blog</h3>
+            </div>
+            <div class="blog-con">
+                <div class="blog-items">
+                    <img src="https://image.pixstory.com/optimized/Pixstory-image-164223377432453.png" alt="">
+                    <h1>COntent</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam error veritatis consequuntur, suscipit quibusdam omnis sunt eos aliquid nobis. Veritatis velit voluptatibus accusantium expedita blanditiis eum alias saepe iusto mollitia.</p>
+                    <a href="#" class="btn">Learn more</a>
+                </div>
+
+                <div class="blog-items">
+                    <img src="https://image.pixstory.com/optimized/Pixstory-image-164223377432453.png" alt="">
+                    <h1>COntent</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam error veritatis consequuntur, suscipit quibusdam omnis sunt eos aliquid nobis. Veritatis velit voluptatibus accusantium expedita blanditiis eum alias saepe iusto mollitia.</p>
+                    <a href="#" class="btn">Learn more</a>
+                </div>
+
+                <div class="blog-items">
+                    <img src="https://image.pixstory.com/optimized/Pixstory-image-164223377432453.png" alt="">
+                    <h1>COntent</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam error veritatis consequuntur, suscipit quibusdam omnis sunt eos aliquid nobis. Veritatis velit voluptatibus accusantium expedita blanditiis eum alias saepe iusto mollitia.</p>
+                    <a href="#" class="btn">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Ends -->
+
+
+    <div class="footer-top">
+        <div class="container">
+            <div class="foodter-top-con">
+                <div class="footer-top-items">
+                    <h4>Laleat Poste</h4>
+                    <div class="footer-top-items-con">
+                        <div class="date">
+                            JULY <br>
+                            27
+                        </div>
+                        <div class="info">
+                            <span class="info-title">Lorem ipsum dolor sit amet.</span>
+                            <span class="info-title">Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </div>
+
+                    <div class="footer-top-items-con">
+                        <div class="date">
+                            JULY <br>
+                            27
+                        </div>
+                        <div class="info">
+                            <span class="info-title">Lorem ipsum dolor sit amet.</span>
+                            <span class="info-title">Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </div>
+
+                    <div class="footer-top-items-con">
+                        <div class="date">
+                            JULY <br>
+                            27
+                        </div>
+                        <div class="info">
+                            <span class="info-title">Lorem ipsum dolor sit amet.</span>
+                            <span class="info-title">Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-top-items">
+                    <h1>title </h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam inventore hic, culpa voluptates fuga repellendus assumenda sed aspernatur explicabo veritatis!</p>
+
+                </div>
+                <div class="footer-top-items">
+                    <h1> Stay Connected</h1>
+                    <p>Face Book</p>
+                    <p>TWitter</p>
+                    <p>TiKTok</p>
+                    <p>LOine</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-buttom">
+        <p>CopyRigth 2023:Allrigth reserved Bloob web design.</p>
+    </div>
+</body>
+</html>

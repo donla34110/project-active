@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        body{
+            margin: 0;
+        }
+        #mybox{
+            background-color: aquamarine;
+            width: 200px;
+            height: 200px;
+            font-size: 10rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="mybox">😊</div>
+
+
+    <script> 
+        const mybox = document.getElementById("mybox");
+        const moveamount =30;
+        let x =0;
+        let y =0;
+        document.addEventListener("keydown", Event =>{
+            if(Event.key.startsWith("Arrow")){
+                switch(Event.key){
+                case "ArrowUp":
+                    y += moveamount;
+                    break;
+                case "ArrowDown":
+                    y -= moveamount;
+                     break;
+                case "ArrowLeft":
+                    x -= moveamount;
+                    break;
+                case "ArrowRight":
+                    x += moveamount;
+                    break;
+                }
+                mybox.style.top = `${y}px`;
+                mybox.style.left = `${x}px`;
+            }
+
+        })
+
+
+
+
+        // document.addEventListener("keydown", event => {
+        //         mybox.textContent = "👌";
+        //         mybox.style.backgroundColor = "tomato";
+        //     });
+        //     document.addEventListener("keyup", event => {
+        //         mybox.textContent = "😒";
+        //         mybox.style.backgroundColor = "lightblue";
+        //     });
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto; /* Center the container */
+}
+
+nav {
+    padding: 1rem;
+    background-color: darkblue;
+}
+
+.lo-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center the items vertically in the navigation bar */
+}
+
+.logo a {
+    font-size: 2rem;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.menu li a {
+    color: darkgray;
+    text-decoration: none;
+}
+
+.menu li {
+    margin: 0 1rem;
+}
+
+.maincontent {
+    background-color: aquamarine;
+}
+
+.maincontent-con {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if there's not enough space */
+}
+
+.maincontent-info {
+    flex: 1; /* Take up remaining space */
+    padding: 2rem;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.maincontent-info h3 {
+    font-size: 3rem;
+}
+
+.maincontent-info p {
+    margin: 1rem 0;
+}
+
+.maincontent-info .maincontent-as {
+    background-color: brown;
+    color: white;
+    padding: 1rem;
+    border-radius: 7px;
+    text-decoration: none;
+    display: inline-block; /* Ensure the button takes only the necessary width */
+}
+
+.maincontent-img {
+    flex: 1; /* Take up remaining space */
+    padding: 2rem;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.maincontent-img img {
+    width: 100%;
+    border-radius: 10px;
+}

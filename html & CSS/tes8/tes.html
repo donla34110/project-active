@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            border: 1px solid red;
+            grid-template-rows: 90px auto auto auto;
+            row-gap: 2rem;
+            
+
+            
+            
+            
+            
+            
+            & div{
+                padding: 1rem;
+                background-color: rgb(84, 156, 132);
+                border: 1px solid red;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div>item1</div>
+            <div>item2</div>
+            <div>item3</div>
+            <div>item4</div>
+            <div>item5</div>
+            <div>item6</div>
+        </div>
+    </section>
+</body>
+</html>

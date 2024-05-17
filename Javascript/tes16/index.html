@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+   <h1 id="element">The awim</h1>
+    <div class="friuts">Apple</div>
+    <div class="friuts">Banana</div>
+    <div class="friuts">oreng</div>
+
+<h4>Root Vagettable</h4>
+    <ul id="fruits">|
+        <li>apple</li>
+        <li>orange</li>
+        <li>banana</li>
+    </ul>
+<h4>Root Vagettable</h4>
+    <ul id="vegetables">
+        <li>carrots</li>
+        <li>onions</li>
+        <li>potatoes</li>
+    </ul>
+
+
+    
+
+    <script>
+        // const friut = document.getElementsByClassName("friuts");
+
+        // Array.from(friut).map(friut => {
+        //     friut.style.backgroundColor = "yellow";
+            
+        // });
+
+        const h4element = document.getElementsByTagName("h4");
+        const h4element1 = document.getElementsByTagName("li");
+        
+        const element = document.querySelectorAll(".friuts");
+
+        element.forEach(function(namert){
+            namert.style.backgroundColor="red";
+        })
+        
+        
+        
+        
+        // for(let got of h4element1){
+        //     got.style.backgroundColor="red"
+        // }
+
+
+        
+        
+        
+        //     h4element[0].style.backgroundColor = "red"
+        // console.log(h4element[0]);
+    </script>
+</body>
+</html>

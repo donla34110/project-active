@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+nav{
+    background-color: #333;
+    color: #fff;
+
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+
+}
+.container-con{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 60px;
+    padding: 0 2rem;
+
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.menu li{
+    list-style: none;
+    margin-left: 2rem;
+}
+.menu a{
+    color:#fff;
+    text-decoration: none;
+
+}
+main{
+    background-color: antiquewhite;
+    padding: 3rem 0;
+}
+footer {
+    background-color: aquamarine;
+    padding: 2rem;
+    text-align: center;
+    color: #fff;
+}
+
+/* hamberGer is css */
+.ham-menu {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff7f7;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {opacity: 0;}
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+@media only screen and (min-width:400px){
+    .ham-menu{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width:400px){
+    .menu{
+        display: none;
+
+    }
+    .container-con{
+        padding: 1rem;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu{
+        width: 100%;
+
+    }
+    .menu li{
+       
+        margin: 1.5rem 0;
+        
+        padding: 1rem;
+    }
+    .menu li:hover{
+        background-color: #494949;
+        transition: 0.3s;
+    }
+    .active{
+        display: block;
+    }
+
+}

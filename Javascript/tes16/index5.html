@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #btn{
+        font-size: 5rem;
+        padding: 20px 25px;
+
+    }
+
+    .enable{
+        background-color: rebeccapurple;
+        color: orange;
+
+    }
+
+    .hover{
+        box-shadow: 0 0 10px hsla(0, 0, 0%, 0.2);
+        font-weight: blod;
+    }
+
+    .enable1{
+        background-color: rgb(113, 95, 130);
+        color: rgb(45, 34, 13);
+
+    }
+
+
+</style>
+</head>
+<body>
+
+    <button id="btn">Hide</button>
+    <script>
+        const mybutton = document.getElementById("btn");
+            
+
+
+        mybutton.classList.add("enable1");
+
+
+        mybutton.addEventListener("click",event => {
+
+            if(event.target.classList.contains("enable")){
+                event.target.textContent +="😁";
+            }
+            else{
+                event.target.classList.replace("enable1","enable");
+            }
+        })
+
+
+
+
+
+
+            // สร้าง Promise เพื่อการโหลดข้อมูล
+const loadData = new Promise((resolve, reject) => {
+  // สมมติว่ามีการโหลดข้อมูลจากเซิร์ฟเวอร์
+  setTimeout(() => {
+    const data = { name: 'John', age: 30 };
+    if (data) {
+      // การโหลดข้อมูลสำเร็จ
+      resolve(data);
+    } else {
+      // การโหลดข้อมูลไม่สำเร็จ
+      reject('Failed to load data');
+    }
+  }, 2000);
+});
+
+// เรียกใช้งาน Promise โดยใช้ then เพื่อจัดการกับการโหลดข้อมูลที่สำเร็จ
+loadData.then((da) => {
+  console.log('Data loaded successfully:', da);
+}).catch((error) => {
+  console.error('Error:', error);
+});
+
+
+          
+    
+    </script>
+</body>
+</html>

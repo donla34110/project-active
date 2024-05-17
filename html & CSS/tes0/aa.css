@@ -1,0 +1,110 @@
+/* navbar */
+.navbar{
+    display: flex;
+  
+    background-color: black;
+    color: white;
+    height: 50px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    
+    display: flex;
+    width: 20%;
+    justify-content:center ;
+    align-items: center;
+    color: aliceblue;
+     
+}
+ul{
+    width: 100%;
+   
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    
+}
+ul li{
+    margin: 0 1rem;
+    
+}
+ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+/* header / branner */
+header{
+    height: 500px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://static.thairath.co.th/media/dFQROr7oWzulq5Fa5KwQHJp6IHSifbMuudos0sbsKp1uncXl0Q7w7QKHrDKkcS6qLG4.jpg");
+    
+}
+.header-info{
+    width:800px;
+   
+    text-align: center;
+    height: 250px;
+}
+.header-info a {
+    background-color: green;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    display: block;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70px;
+
+    
+    
+
+
+}
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 1rem;
+    color:white;
+}
+.temes{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+.temes-item{
+   
+    padding: 1.5rem;
+    background-color:aquamarine;
+    color: black;
+    text-align: center;
+
+}
+.temes-item a{
+    text-decoration: none;
+    background-color: black;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 4px;
+    display: block;
+    width: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+
+
+}
+.temes-item img{
+    width: 300px;
+    border-radius: 100%;
+    box-shadow: 0 0 10px red;
+
+}
